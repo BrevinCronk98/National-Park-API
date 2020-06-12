@@ -11,5 +11,12 @@ namespace NationalParkAPI.Models
         public string ParkDescription { get; set; }
         public string ParkFauna { get; set; }
         public string ParkFlora { get; set; }
+        public virtual ICollections<StatePark> StateParks { get; }
+
+         public Park()
+        {
+            this.States = new HashSet<StatePark>();
+            
+        }
     }
 }
