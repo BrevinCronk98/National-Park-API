@@ -71,7 +71,7 @@ namespace NationalParkAPI.Models
                         { 
                             ParkId = 6, 
                             ParkName = "King Canyon National Park", 
-                            ParkLocation = "Californ", 
+                            ParkLocation = "California", 
                             ParkDescription = "Kings Canyon National Park is an American national park in the southern Sierra Nevada, in Fresno and Tulare Counties, California. Originally established in 1890 as General Grant National Park, the park was greatly expanded and renamed to Kings Canyon National Park on March 4, 1940. The park's namesake, Kings Canyon, is a rugged glacier-carved valley more than a mile (1,600 m) deep. Other natural features include multiple 14,000-foot (4,300 m) peaks, high mountain meadows, swift-flowing rivers, and some of the world's largest stands of giant sequoia trees. Kings Canyon is north of and contiguous with Sequoia National Park, and both parks are jointly administered by the National Park Service as the Sequoia and Kings Canyon National Parks. The majority of the 461,901-acre (186,925 ha) park, drained by the Middle and South Forks of the Kings River and many smaller streams, is designated wilderness. Tourist facilities are concentrated in two areas: Grant Grove, home to General Grant (the second largest tree in the world, measured by trunk volume) and Cedar Grove, located in the heart of Kings Canyon. Overnight hiking is required to access most of the park's backcountry, or high country, which for much of the year is covered in deep snow. The combined Pacific Crest Trail/John Muir Trail, a backpacking route, traverses the entire length of the park from north to south. General Grant National Park was initially created to protect a small area of giant sequoias from logging. Although John Muir's visits brought public attention to the huge wilderness area to the east, it took more than fifty years for the rest of Kings Canyon to be designated a national park. Environmental groups, park visitors and many local politicians wanted to see the area preserved; however, development interests wanted to build hydroelectric dams in the canyon. Even after President Franklin D. Roosevelt expanded the park in 1940, the fight continued until 1965, when the Cedar Grove and Tehipite Valley dam sites were finally annexed into the park.  As visitation rose post–World War II, further debate took place over whether the park should be developed as a tourist resort, or retained as a more natural environment restricted to simpler recreation such as hiking and camping. Ultimately, the preservation lobby prevailed and today, the park has only limited services and lodgings despite its size. Due to this and the lack of road access to most of the park, Kings Canyon remains the least visited of the major Sierra parks, with just under 700,000 visitors in 2017compared to 1.3 million visitors at Sequoia and over 4 million at Yosemite.", 
                             ParkFauna = "Black Bear, Grizzly Bear, Bighorns, Mountain Lions and many many more!! ", 
                             ParkFlora = "Whitebark Pine, Red Fir, Lodgepole Pine, Foxtail Pine, and lots more!! "
@@ -90,10 +90,10 @@ namespace NationalParkAPI.Models
                         new Park 
                         { 
                             ParkId = 8, 
-                            ParkName = "Acadia", 
-                            ParkLocation = "Maine", 
-                            ParkDescription = " Acadia National Park is an American national park located in the state of Maine, southwest of Bar Harbor. The park preserves about half of Mount Desert Island, many adjacent smaller islands, and part of the Schoodic Peninsula on the coast of Maine. Acadia was initially designated Sieur de Monts National Monument by proclamation of President Woodrow Wilson in 1916. Sieur de Monts was renamed and redesignated Lafayette National Park by Congress in 1919—the first national park in the United States east of the Mississippi River and the only one in the Northeastern United States. The park was renamed Acadia National Park in 1929. More than 3.4 million people visited the park in 2019. ", 
-                            ParkFauna = " Carnivores: Black Bear, Coyote, Fox, Raccoon, River Otters and many many more!! ", 
+                            ParkName = "Big Bend", 
+                            ParkLocation = "Texas", 
+                            ParkDescription = " Big Bend National Park is an American national park located in West Texas, bordering Mexico. The park has national significance as the largest protected area of Chihuahuan Desert topography and ecology in the United States. The park protects more than 1,200 species of plants, more than 450 species of birds, 56 species of reptiles, and 75 species of mammals.Geological features in the park include sea fossils and dinosaur bones, as well as volcanic dikes. The area has a rich cultural history, from archeological sites dating back nearly 10,000 years to more recent pioneers, ranchers, and miners. The Chisos Mountains are located in the park, the only mountain range in the United States to be fully contained within the boundary of a national park.The park encompasses an area of 801,163 acres (1,251.8 sq mi; 3,242.2 km sq). For more than 1,000 miles (1,600 km), the Rio Grande/Río Bravo forms the boundary between Mexico and the United States, and Big Bend National Park administers approximately 118 miles (190 km) along that boundary. The park was named after a large bend in the river, and the Texas—Mexico border.Because the Rio Grande serves as an international boundary, the park faces unusual constraints while administering and enforcing park rules, regulations, and policies. In accordance with the Treaty of Guadalupe Hidalgo, the park's territory extends only to the center of the deepest river channel as the river flowed in 1848. The rest of the land south of that channel, and the river, lies within Mexican territory. The park is bordered by the protected areas of Parque Nacional Cañon de Santa Elena and Maderas del Carmen in Mexico.", 
+                            ParkFauna = " Javelina, Pronghorns, Kangaroo Rat, Coyote, Golden Eagle, Black Tailed Jack Rabbit, and a whole lot more! ",
                             ParkFlora = "Balsam Fir, Eastern Hemlock, Red Pine, White spruce, Canada Mayflower, and lots more!! "
                         },
                         
@@ -110,11 +110,11 @@ namespace NationalParkAPI.Models
                         new Park 
                         { 
                             ParkId = 10, 
-                            ParkName = "Wrangell-St. Elias National Park and Preserve", 
-                            ParkLocation = "Alaska", 
-                            ParkDescription = "Wrangell–St. Elias National Park and Preserve is an American national park and preserve managed by the National Park Service in south central Alaska. The park and preserve were established in 1980 by the Alaska National Interest Lands Conservation Act. The protected areas are included in an International Biosphere Reserve and are part of the Kluane/Wrangell–St. Elias/Glacier Bay/Tatshenshini-Alsek UNESCO World Heritage Site. The park and preserve form the largest area managed by the National Park Service with a total of 13,175,799 acres (20,587.186 sq mi; 53,320.57 km sq), an expanse that could encapsulate a total of six Yellowstone National Parks. The park includes a large portion of the Saint Elias Mountains, which include most of the highest peaks in the United States and Canada, yet are within 10 miles (16 km) of tidewater, one of the highest reliefs in the world. Wrangell–St. Elias borders on Canada's Kluane National Park and Reserve to the east and approaches another American national park to the south, Glacier Bay. The chief distinction between park and preserve lands is that sport hunting is prohibited in the park and permitted in the preserve. In addition, 9,078,675 acres (3,674,009 ha) of the park and preserve are designated as the largest single wilderness in the United States.Wrangell–St. Elias National Monument was designated on December 1, 1978, by President Jimmy Carter using the Antiquities Act, pending final legislation to resolve the allotment of public lands in Alaska. Establishment as a national park and preserve followed the passage of the Alaska National Interest Lands Conservation Act in 1980. The park has long, extremely cold winters and a short summer season. Plate tectonics are responsible for the uplift of the mountain ranges that cross the park. The park's extreme high point is Mount Saint Elias at 18,008 feet (5,489 m), the second tallest mountain in both the United States and Canada. The park has been shaped by the competing forces of volcanism and glaciation. Mount Wrangell is an active volcano, one of several volcanoes in the western Wrangell Mountains. In the St. Elias Range, Mount Churchill has erupted explosively within the past 2,000 years. The park's glacial features include Malaspina Glacier, the largest piedmont glacier in North America, Hubbard Glacier, the longest tidewater glacier in Alaska, and Nabesna Glacier, the world's longest valley glacier. The Bagley Icefield covers much of the park's interior, which includes 60% of the permanently ice-covered terrain in Alaska. At the center of the park, the boomtown of Kennecott exploited one of the world's richest deposits of copper from 1903 to 1938, exposed by and in part incorporated into Kennicott Glacier. The abandoned mine buildings and mills comprise a National Historic Landmark district. ", 
-                            ParkFauna = " Cougars, Wolfs, Moose, Beavers, Canadian Lynxe, Red Fox, Coyote and many many more!! ", 
-                            ParkFlora = "Black Spuce, Blueberry, Dwarf Birch, Arctagrostis Latifolia, and lots more!! "
+                            ParkName = "Guadalupe Mountains National Park", 
+                            ParkLocation = "Texas", 
+                            ParkDescription = "Guadalupe Mountains National Park is an American national park in the Guadalupe Mountains, east of El Paso, Texas. The mountain range includes Guadalupe Peak, the highest point in Texas at 8,749 feet (2,667 m), and El Capitan used as a landmark by travelers on the route later followed by the Butterfield Overland Mail stagecoach line. The ruins of a stagecoach station stand near the Pine Springs visitor center. The restored Frijole Ranch contains a small museum of local history and is the trailhead for Smith Spring. The park covers 86,367 acres (134.9 sq mi; 349.5 km sq) in the same mountain range as Carlsbad Caverns National Park, about 25 miles (40 km) to the north in New Mexico. The Guadalupe Peak Trail winds through pinyon pine and Douglas-fir forests as it ascends over 3,000 feet (910 m) to the summit of Guadalupe Peak, with views of El Capitan and the Chihuahuan Desert.The McKittrick Canyon trail leads to a stone cabin built in the early 1930s as the vacation home of Wallace Pratt, a petroleum geologist who donated the land. Dog Canyon, on the northern park boundary at the Texas-New Mexico State line, is accessed via Carlsbad, New Mexico or Dell City, Texas. Camping is available at the Pine Springs campground and at Dog Canyon. A public corral for livestock is available by reservation.The Gypsum sand dunes lie on the west side of the park near Dell City. A rough four-wheel drive road leads to the Williams Ranch.", 
+                            ParkFauna = " Mule Deer, Road Runner, , Black Bear, Badger, Bob Cat, Coyote and many many more!! ", 
+                            ParkFlora = "Big Tooth Maple, Honey Mesquite, Madrone, Mexican Buckeye, Juniper, and lots more!! "
                         }
 
                     );
@@ -127,96 +127,115 @@ namespace NationalParkAPI.Models
                                 StateId = 1,
                                 StateName = "Alabama"
                             },
+
                             new State
                             {
                                 StateId = 2,
                                 StateName = "Alaska"
                             },
+
                             new State
                             {
                                 StateId = 3,
                                 StateName = "Arizona"
                             },
+
                             new State
                             {
                                 StateId = 4,
                                 StateName = "Arkansas"
                             },
+
                             new State
                             {
                                 StateId = 5,
                                 StateName = "California"
                             },
+
                             new State
                             {
                                 StateId = 6,
                                 StateName = "Colorado"
                             },
+
                             new State
                             {
                                 StateId = 7,
                                 StateName = "Conneticut"
                             },
+                            
                             new State
                             {
                                 StateId = 8,
                                 StateName = "Delaware"
                             },
+
                             new State
                             {
                                 StateId = 9,
                                 StateName = "Florida"
                             },
+
                             new State
                             {
                                 StateId = 10,
                                 StateName = "Georgia"
                             },
+                            
                             new State
                             {
                                 StateId = 11,
                                 StateName = "Hawaii"
                             },
+
                             new State
                             {
                                 StateId = 12,
                                 StateName = "Idaho"
                             },
+
                             new State
                             {
                                 StateId = 13,
                                 StateName = "Illinois"
                             },
+
                             new State
                             {
                                 StateId = 14,
                                 StateName = "Indiana"
                             },
+
                             new State
                             {
                                 StateId = 15,
                                 StateName = "Iowa"
                             },
+
                             new State
                             {
                                 StateId = 16,
                                 StateName = "Kentucky"
                             },
+
                             new State
                             {
                                 StateId = 17,
                                 StateName = "Louisiana"
                             },
+
                             new State
                             {
                                 StateId = 18,
                                 StateName = "Maine"
                             },
+
                             new State
                             {
                                 StateId = 19,
                                 StateName = "Maryland"
                             },
+                            
                             new State
                             {
                                 StateId = 20,
@@ -227,152 +246,260 @@ namespace NationalParkAPI.Models
                                 StateId = 21,
                                 StateName = "Michigan"
                             },
+
                             new State
                             {
                                 StateId = 22,
                                 StateName = "Minnesota"
                             },
+
                             new State
                             {
                                 StateId = 23,
                                 StateName = "Mississippi"
                             },
+                            
                             new State
                             {
                                 StateId = 24,
                                 StateName = "Missouri"
                             },
+
                             new State
                             {
                                 StateId = 25,
                                 StateName = "Montana"
                             },
+
                             new State
                             {
                                 StateId = 26,
                                 StateName = "Nebraska"
                             },
+
                             new State
                             {
                                 StateId = 27,
                                 StateName = "Nevada"
                             },
+
                             new State
                             {
                                 StateId = 28,
                                 StateName = "New Hampshire"
                             },
+
                             new State
                             {
                                 StateId = 29,
                                 StateName = "New Jersey"
                             },
+
                             new State
                             {
                                 StateId = 30,
                                 StateName = "New Mexico"
                             },
+                            
                             new State
                             {
                                 StateId = 31,
                                 StateName = "New York"
                             },
+
                             new State
                             {
                                 StateId = 32,
                                 StateName = "North Carolina"
                             },
+
                             new State
                             {
                                 StateId = 33,
                                 StateName = "North Dakota"
                             },
+
                             new State
                             {
                                 StateId = 34,
                                 StateName = "Ohio"
                             },
+
                             new State
                             {
                                 StateId = 35,
                                 StateName = "Oklahoma"
                             },
+
                             new State
                             {
                                 StateId = 36,
                                 StateName = "Oregon"
                             },
+
                             new State
                             {
                                 StateId = 37,
                                 StateName = "Pennsylvania"
                             },
+
                             new State
                             {
                                 StateId = 38,
                                 StateName = "Rhode Island"
                             },
+
                             new State
                             {
                                 StateId = 39,
                                 StateName = "South Carolina"
                             },
+
                             new State
                             {
                                 StateId = 40,
                                 StateName = "South Dakota"
                             },
+
                             new State
                             {
                                 StateId = 41,
                                 StateName = "Tennessee"
                             },
+
                             new State
                             {
                                 StateId = 42,
                                 StateName = "Texas"
                             },
+
                             new State
                             {
                                 StateId = 43,
                                 StateName = "Utah"
                             },
+
                             new State
                             {
                                 StateId = 44,
                                 StateName = "Vermont"
                             },
+
                             new State
                             {
                                 StateId = 45,
                                 StateName = "Virginia"
                             },
+
                             new State
                             {
                                 StateId = 46,
                                 StateName = "Washington"
                             },
+                            
                             new State
                             {
                                 StateId = 47,
                                 StateName = "West Virginia"
                             },
+
                             new State
                             {
                                 StateId = 48,
                                 StateName = "Wisconsin"
                             },
+
                             new State
                             {
                                 StateId = 49,
                                 StateName = "Wyoming"
                             },
+
                              new State
                             {
                                 StateId = 50,
                                 StateName = "Kansas"
                             }
                         );
+
+                        builder.Entity<StatePark>()
+                            .HasData(
+                                new StatePark
+                                {
+                                    StateParkId = 1,
+                                    StateId = 18,
+                                    ParkId = 1
+
+                                },
+
+                                new StatePark
+                                {
+                                    StateParkId = 2,
+                                    StateId = 43,
+                                    ParkId = 2
+                                },
+
+                                new StatePark
+                                {
+                                    StateParkId = 3,
+                                    StateId = 40,
+                                    ParkId = 3
+                                },
+
+                                new StatePark
+                                {
+                                    StateParkId = 4,
+                                    StateId = 3,
+                                    ParkId = 4
+                                },
+
+                                new StatePark
+                                {
+                                    StateParkId = 5,
+                                    StateId = 26,
+                                    ParkId = 5
+
+                                },
+
+                                new StatePark
+                                {
+                                    StateParkId = 6,
+                                    StateId = 5,
+                                    ParkId = 6
+
+                                },
+
+                                new StatePark
+                                {
+                                    StateParkId = 7,
+                                    StateId = 46,
+                                    ParkId = 7
+
+                                },
+
+                                new StatePark
+                                {
+                                    StateParkId = 8,
+                                    StateId = 42,
+                                    ParkId = 8
+
+                                },
+
+                                new StatePark
+                                {
+                                    StateParkId = 9,
+                                    StateId = 6,
+                                    ParkId = 9
+
+                                },
+
+                                new StatePark
+                                {
+                                    StateParkId = 10,
+                                    StateId = 42,
+                                    ParkId = 10
+                                }
+                            );
             }
     }
 }
