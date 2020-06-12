@@ -34,8 +34,9 @@ namespace NationalParkAPI
                 options.AddPolicy(MyAllowSpecificOrigins,
                 builder =>
                 {  
-                builder.WithOrigins("http://example.com",
-                                    "http://www.contoso.com");
+                builder.WithOrigins("http://google.com",
+                                    "http://localhost:5000",
+                                    "https://localhost:5001");
             });
         });
            services.AddDbContext<ParkAPIContext>(opt =>

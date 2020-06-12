@@ -102,6 +102,10 @@ atch run" if You Plan on Modifying Project.
 * Input: "api/NationalParks/3"
 * Output: "YellowStone has been updated"
 
+#### User can Post using API
+* Input: "api/NationalParks/31"
+* Output: "Thanks for adding Yellowstone has been updated"
+
 
 ## Technologies Used
 * MySQL Workbench
