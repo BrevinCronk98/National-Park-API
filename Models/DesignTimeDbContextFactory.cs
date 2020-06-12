@@ -11,9 +11,9 @@ namespace NationalParkAPI.Models
 
         ParkAPIContext IDesignTimeDbContextFactory<ParkAPIContext>.CreateDbContext(string[] args)
         {
-            IConfigurationRoot configuration = new ConfigurationBuilder();
+            IConfigurationRoot configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AdddJsonFile("appsetting.json")
+                .AddJsonFile("appsettings.json")
                 .Build();
 
             var builder = new DbContextOptionsBuilder<ParkAPIContext>();
