@@ -7,6 +7,7 @@ namespace NationalParkAPI.Models
     {
         public int ParkId { get; set; }
         public string ParkName { get; set; }
+        public string ParkLocation { get; set; }
         public string ParkDescription { get; set; }
         public string ParkFauna { get; set; }
         public string ParkFlora { get; set; }
