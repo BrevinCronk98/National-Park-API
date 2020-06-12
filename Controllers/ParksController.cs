@@ -44,8 +44,11 @@ namespace NationalParkAPI.Controllers
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put(int id, [FromBody] Park park)
         {
+            park.ParkId == id;
+            _db.Entry(park).State = EntityState.Modified;
+            _db.SaveChanges();
         }
 
         // DELETE api/values/5
