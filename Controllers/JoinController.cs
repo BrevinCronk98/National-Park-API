@@ -22,13 +22,13 @@ namespace NationalParkAPI.Controllers
         public ActionResult<IEnumerable<StatePark>> Get(int stateId, int parkId)
         {
             var query = _db.StatePark.AsQueryable();
-            if( stateId != null)
+            if( stateId != 0)
             {
                 query.Where(entry => entry.StateId == stateId);
             }
-            if(parkId != null)
+            if(parkId != 0)
             {
-                query.Where(entry. entry.ParkId == parkId);
+                query.Where(entry => entry.ParkId == parkId);
             }
             return query.ToList();
         }
@@ -37,14 +37,14 @@ namespace NationalParkAPI.Controllers
         [HttpGet("{id}")]
         public ActionResult<StatePark> Get(int id)
         {
-            return _db.StatePark.FirstOrDefault(entry. entry.StateParkId == id);
+            return _db.StatePark.FirstOrDefault(entry => entry.StateParkId == id);
         }
 
         // POST api/StateParks
         [HttpPost]
         public void Post([FromBody] StatePark statePark)
         {
-            _db.StatePark.Add(statePark)
+            _db.StatePark.Add(statePark);
             _db.SaveChanges();
         }
 

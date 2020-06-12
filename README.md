@@ -13,8 +13,8 @@
 2. To download the project directory to your desktop enter the following commands:
 ```
 cd Desktop
-git clone https://github.com/BrevinCronk98/
-cd NationalParkAPI (or the file name you created for the main directory of the download)
+git clone https://github.com/BrevinCronk98/National-Park-API
+cd National-Park-API (or the file name you created for the main directory of the download)
 ```
 3. To view the downloaded files, open them in a text editor or IDE of your choice.
 * if you have VSCode for example, when your terminal is within the main project directory you can open all of the files with the command:
@@ -73,6 +73,30 @@ CREATE TABLE `parks` (
 
 ```
 
+```
+USE `national_park`;
+
+CREATE TABLE `states` (
+  `StateId` int(11) NOT NULL AUTO_INCREMENT,
+  `StateName` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`StateId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+```
+
+```
+
+USE `national_park`;
+
+CREATE TABLE `statepark` (
+  `StateParkId` int(11) NOT NULL AUTO_INCREMENT,
+  `ParkId` int(11) NOT NULL AUTO_INCREMENT,
+  `StateId` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`StateParkId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+```
+
 4. Press the lightning bolt button to run this command.
 5. If the database does not appear, right click in the schemas bar and select Refresh All.
 atch run" if You Plan on Modifying Project. 
@@ -82,6 +106,8 @@ atch run" if You Plan on Modifying Project.
 
 ## Known Bugs
 #### There are no Known Bugs Yet
+
+* Join Tables are currently not working.
 
 
 ## Specifications:
