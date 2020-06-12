@@ -27,17 +27,19 @@ namespace NationalParkAPI.Controllers
             return _db.Parks.ToList();
         }
 
-        // GET api/values/5
+        // GET api/Parks/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ActionResult<Park> Get(int id)
         {
-            return "value";
+           return _db.Parks.FirstOrDefault(entry => entry.ParkId == id);
         }
 
-        // POST api/values
+        // POST api/Parks/5
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Park park)
         {
+            _db.Parks.Add(park);
+            _db.SaveChanges();
         }
 
         // PUT api/values/5
