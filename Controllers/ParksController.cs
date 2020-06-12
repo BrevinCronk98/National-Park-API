@@ -43,6 +43,15 @@ namespace NationalParkAPI.Controllers
            return _db.Parks.FirstOrDefault(entry => entry.ParkId == id);
         }
 
+        // Get api/Parks/randompark
+        [HttpGet("randompark")]
+        public ActionResult<Park> GetRandom()
+        {
+            Random rand = new Random();
+            int toSkip = rand.Next(0, _db.Parks.Count());
+            return _db.Parks.OrderBy(r => Guid.NewGuid()).Skip(toSkip).Take(1).First();
+        }
+
         // POST api/Parks/5
         [HttpPost]
         public void Post([FromBody] Park park)
