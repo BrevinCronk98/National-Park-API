@@ -24,7 +24,16 @@ namespace NationalParkAPI.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Park>> Get(string parkName, string parkLocation, string parkDescription, string parkFauna, string parkFlora)
         {
-            return _db.Parks.ToList();
+            var query = _db.Parks.AsQueryable();
+            if(parkName != null)
+            {
+                query = query.Where(entry => entry.ParkName == parkName);
+            }
+            if(parkLocation != null)
+            {
+                query = query.Where(entry => entry.ParkLocation == parkLocation);
+            }
+           return query.ToList();
         }
 
         // GET api/Parks/5
@@ -46,7 +55,7 @@ namespace NationalParkAPI.Controllers
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] Park park)
         {
-            park.ParkId == id;
+            park.ParkId = id;
             _db.Entry(park).State = EntityState.Modified;
             _db.SaveChanges();
         }
@@ -55,6 +64,9 @@ namespace NationalParkAPI.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            var parkToDelete = _db.Parks.FirstOrDefault(entry => entry.ParkId == id);
+            _db.Parks.Remove(parkToDelete);
+            _db.SaveChanges();
         }
     }
 }
