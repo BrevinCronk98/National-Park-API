@@ -3,18 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using NationalParkAPI.Models;
 
 namespace NationalParkAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class ParksController : ControllerBase
     {
-        // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+
+        private ParkAPIContext _db;
+
+        public ParksController(ParkAPIContext db)
         {
-            return new string[] { "value1", "value2" };
+            _db = db;
+        }
+
+
+        // GET api/Parks
+        [HttpGet]
+        public ActionResult<IEnumerable<Park>> Get(string parkName, string parkLocation, string parkDescription, string parkFauna, string parkFlora)
+        {
+            return _db.Parks.ToList();
         }
 
         // GET api/values/5
