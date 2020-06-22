@@ -125,6 +125,8 @@ atch run" if You Plan on Modifying Project.
 ## to PUT 
 <img src="./img/PUT.png" width=60%>
 
+### You can then repeat these steps with http://localhost:5000/api/States, except POSTing is unavailable for states as there are only 50 states.
+
 ## Specifications:
 
 
