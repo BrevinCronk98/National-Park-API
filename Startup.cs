@@ -22,26 +22,17 @@ namespace NationalParkAPI
             Configuration = configuration;
         }
 
-        readonly string MyAllowSpecificOrigins ="_myAllowSpecificOrigins";
 
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors(options =>
-            {
-                options.AddPolicy(MyAllowSpecificOrigins,
-                builder =>
-                {  
-                builder.WithOrigins("http://google.com",
-                                    "http://localhost:5000",
-                                    "https://localhost:5001");
-            });
-        });
            services.AddDbContext<ParkAPIContext>(opt =>
                 opt.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddSwaggerDocument();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,7 +47,8 @@ namespace NationalParkAPI
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-            app.UseCors(MyAllowSpecificOrigins);
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
 
             app.UseHttpsRedirection();
             app.UseMvc();

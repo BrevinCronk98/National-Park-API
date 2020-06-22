@@ -1,0 +1,454 @@
+{
+	"x-generator": "NSwag v13.6.1.0 (NJsonSchema v10.1.21.0 (Newtonsoft.Json v11.0.0.0))",
+	"swagger": "2.0",
+	"info": {
+		"title": "My Title",
+		"version": "1.0.0"
+	},
+	"host": "localhost:5000",
+	"schemes": [ "http" ],
+	"paths": {
+		"/api/StateParks": {
+			"get": {
+				"tags": [ "Join" ],
+				"operationId": "Join_GetAll",
+				"produces": [ "text/plain", "application/json", "text/json" ],
+				"parameters": [
+					{
+						"type": "integer",
+						"name": "stateId",
+						"in": "query",
+						"format": "int32",
+						"x-nullable": false
+					},
+					{
+						"type": "integer",
+						"name": "parkId",
+						"in": "query",
+						"format": "int32",
+						"x-nullable": false
+					}
+				],
+				"responses": {
+					"200": {
+						"x-nullable": false,
+						"description": "",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/StatePark"
+							}
+						}
+					}
+				}
+			},
+			"post": {
+				"tags": [ "Join" ],
+				"operationId": "Join_Post",
+				"consumes": [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
+				"parameters": [
+					{
+						"name": "statePark",
+						"in": "body",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/StatePark"
+						},
+						"x-nullable": false
+					}
+				],
+				"responses": {
+					"200": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/StateParks/{id}": {
+			"get": {
+				"tags": [ "Join" ],
+				"operationId": "Join_Get",
+				"produces": [ "text/plain", "application/json", "text/json" ],
+				"parameters": [
+					{
+						"type": "integer",
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"format": "int32",
+						"x-nullable": false
+					}
+				],
+				"responses": {
+					"200": {
+						"x-nullable": false,
+						"description": "",
+						"schema": {
+							"$ref": "#/definitions/StatePark"
+						}
+					}
+				}
+			},
+			"put": {
+				"tags": [ "Join" ],
+				"operationId": "Join_Put",
+				"consumes": [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
+				"parameters": [
+					{
+						"type": "integer",
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"format": "int32",
+						"x-nullable": false
+					},
+					{
+						"name": "statePark",
+						"in": "body",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/StatePark"
+						},
+						"x-nullable": false
+					}
+				],
+				"responses": {
+					"200": {
+						"description": ""
+					}
+				}
+			},
+			"delete": {
+				"tags": [ "Join" ],
+				"operationId": "Join_Delete",
+				"parameters": [
+					{
+						"type": "integer",
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"format": "int32",
+						"x-nullable": false
+					}
+				],
+				"responses": {
+					"200": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/Parks": {
+			"get": {
+				"tags": [ "Parks" ],
+				"operationId": "Parks_GetAll",
+				"produces": [ "text/plain", "application/json", "text/json" ],
+				"parameters": [
+					{
+						"type": "string",
+						"name": "parkName",
+						"in": "query",
+						"x-nullable": true
+					},
+					{
+						"type": "string",
+						"name": "parkLocation",
+						"in": "query",
+						"x-nullable": true
+					},
+					{
+						"type": "string",
+						"name": "parkDescription",
+						"in": "query",
+						"x-nullable": true
+					},
+					{
+						"type": "string",
+						"name": "parkFauna",
+						"in": "query",
+						"x-nullable": true
+					},
+					{
+						"type": "string",
+						"name": "parkFlora",
+						"in": "query",
+						"x-nullable": true
+					}
+				],
+				"responses": {
+					"200": {
+						"x-nullable": false,
+						"description": "",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Park"
+							}
+						}
+					}
+				}
+			},
+			"post": {
+				"tags": [ "Parks" ],
+				"operationId": "Parks_Post",
+				"consumes": [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
+				"parameters": [
+					{
+						"name": "park",
+						"in": "body",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/Park"
+						},
+						"x-nullable": false
+					}
+				],
+				"responses": {
+					"200": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/Parks/{id}": {
+			"get": {
+				"tags": [ "Parks" ],
+				"operationId": "Parks_Get",
+				"produces": [ "text/plain", "application/json", "text/json" ],
+				"parameters": [
+					{
+						"type": "integer",
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"format": "int32",
+						"x-nullable": false
+					}
+				],
+				"responses": {
+					"200": {
+						"x-nullable": false,
+						"description": "",
+						"schema": {
+							"$ref": "#/definitions/Park"
+						}
+					}
+				}
+			},
+			"put": {
+				"tags": [ "Parks" ],
+				"operationId": "Parks_Put",
+				"consumes": [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
+				"parameters": [
+					{
+						"type": "integer",
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"format": "int32",
+						"x-nullable": false
+					},
+					{
+						"name": "park",
+						"in": "body",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/Park"
+						},
+						"x-nullable": false
+					}
+				],
+				"responses": {
+					"200": {
+						"description": ""
+					}
+				}
+			},
+			"delete": {
+				"tags": [ "Parks" ],
+				"operationId": "Parks_Delete",
+				"parameters": [
+					{
+						"type": "integer",
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"format": "int32",
+						"x-nullable": false
+					}
+				],
+				"responses": {
+					"200": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/Parks/randompark": {
+			"get": {
+				"tags": [ "Parks" ],
+				"operationId": "Parks_GetRandom",
+				"produces": [ "text/plain", "application/json", "text/json" ],
+				"responses": {
+					"200": {
+						"x-nullable": false,
+						"description": "",
+						"schema": {
+							"$ref": "#/definitions/Park"
+						}
+					}
+				}
+			}
+		},
+		"/api/States": {
+			"get": {
+				"tags": [ "States" ],
+				"operationId": "States_GetAll",
+				"produces": [ "text/plain", "application/json", "text/json" ],
+				"parameters": [
+					{
+						"type": "string",
+						"name": "stateName",
+						"in": "query",
+						"x-nullable": true
+					}
+				],
+				"responses": {
+					"200": {
+						"x-nullable": false,
+						"description": "",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/State"
+							}
+						}
+					}
+				}
+			},
+			"post": {
+				"tags": [ "States" ],
+				"operationId": "States_Post",
+				"consumes": [ "application/json-patch+json", "application/json", "text/json", "application/*+json" ],
+				"parameters": [
+					{
+						"name": "state",
+						"in": "body",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/State"
+						},
+						"x-nullable": false
+					}
+				],
+				"responses": {
+					"200": {
+						"description": ""
+					}
+				}
+			}
+		},
+		"/api/States/{id}": {
+			"get": {
+				"tags": [ "States" ],
+				"operationId": "States_Get",
+				"produces": [ "text/plain", "application/json", "text/json" ],
+				"parameters": [
+					{
+						"type": "integer",
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"format": "int32",
+						"x-nullable": false
+					}
+				],
+				"responses": {
+					"200": {
+						"x-nullable": false,
+						"description": "",
+						"schema": {
+							"$ref": "#/definitions/State"
+						}
+					}
+				}
+			}
+		}
+	},
+	"definitions": {
+		"StatePark": {
+			"type": "object",
+			"required": [ "stateParkId", "stateId", "parkId" ],
+			"properties": {
+				"stateParkId": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"stateId": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"parkId": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"park": {
+					"$ref": "#/definitions/Park"
+				},
+				"state": {
+					"$ref": "#/definitions/State"
+				}
+			}
+		},
+		"Park": {
+			"type": "object",
+			"required": [ "parkId" ],
+			"properties": {
+				"parkId": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"parkName": {
+					"type": "string"
+				},
+				"parkLocation": {
+					"type": "string"
+				},
+				"parkDescription": {
+					"type": "string"
+				},
+				"parkFauna": {
+					"type": "string"
+				},
+				"parkFlora": {
+					"type": "string"
+				},
+				"states": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/StatePark"
+					}
+				}
+			}
+		},
+		"State": {
+			"type": "object",
+			"required": [ "stateId" ],
+			"properties": {
+				"stateId": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"stateName": {
+					"type": "string"
+				},
+				"parks": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/StatePark"
+					}
+				}
+			}
+		}
+	}
+}

@@ -105,31 +105,48 @@ atch run" if You Plan on Modifying Project.
 
 
 ## Known Bugs
-#### There are no Known Bugs Yet
-
 * Join Tables are currently not working.
+## Testing API
 
+### Using Swagger UI
+
+#### I highly recommend using SwaggerUI to test the API, Which can be found at http://localhost:5000/swagger/index.html#/  (Application must be running to use SwaggerUI; Run "dotnet watch run" in terminal to start the Application)
+
+#### To test on Postman, make sure the application is running, and navigate to the Postman computer application that can be installed at https://www.postman.com/downloads/
+
+* Once you have navigated to Postman
+
+## To GET
+<img src="./img/GET.png" width=60%>
+
+## To POST
+<img src="./img/POST.png" width=60%>
+
+## to PUT 
+<img src="./img/PUT.png" width=60%>
 
 ## Specifications:
 
+
+
 #### User Can See List of All Parks
-* Input: "/api/NationalParks"
-* Output: "YellowStone, Mt. Rainer NP"
+* Input: "GET http://localhost:< port >/api/Parks"
+* Output: "YellowStone, Mt. Rainer"
 
 #### User Can Search Based on Park ID
-* Input: "/api/NationalParks/#"
+* Input: " GET http://localhost:< port >/api/Parks/#"
 * Output: "YellowStone"
 
-#### User can Delete using API
-* Input "/api/NationalPark/3"
+#### User can Delete Park using API
+* Input "http://localhost:< port >/api/Parks/#"
 * Output "You have successfully deleted park bearing this ID"
 
-#### User can Update using API
-* Input: "api/NationalParks/3"
+#### User can Update Park using API
+* Input: " PUT http://localhost:< port > api/Parks/#"
 * Output: "YellowStone has been updated"
 
-#### User can Post using API
-* Input: "api/NationalParks/31"
+#### User can Post Parks using API
+* Input: "POST http://localhost:< port > api/Parks/"
 * Output: "Thanks for adding Yellowstone has been updated"
 
 

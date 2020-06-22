@@ -60,7 +60,7 @@ namespace NationalParkAPI.Controllers
             _db.SaveChanges();
         }
 
-        // PUT api/values/5
+        // PUT api/Parks/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] Park park)
         {
@@ -69,7 +69,7 @@ namespace NationalParkAPI.Controllers
             _db.SaveChanges();
         }
 
-        // DELETE api/values/5
+        // DELETE api/Parks/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
