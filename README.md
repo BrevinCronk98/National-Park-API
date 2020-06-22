@@ -114,7 +114,7 @@ atch run" if You Plan on Modifying Project.
 
 #### To test on Postman, make sure the application is running, and navigate to the Postman computer application that can be installed at https://www.postman.com/downloads/
 
-* Once you have navigated to Postman
+* Once you have navigated to Postman and click the "+" Tab at the top to create a new API call.
 
 ## To GET
 <img src="./img/GET.png" width=60%>
